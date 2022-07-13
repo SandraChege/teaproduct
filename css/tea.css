@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --green:#28a745;
+    --white: #ffffff;
+    --emerlardgreen:#50C878;
+    --slimygreen:#299617;
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;    
+}
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+#nav-bar{
+    padding-left: 750px;
+}
+#nav-bar > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+#nav-bar > ul > li{
+    padding: 15px;
+    text-transform: uppercase;
+}
+#nav-bar > ul >li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding-right: 50px;
+} 
+#nav-bar > ul >li >a:hover{
+    color: var(--green);
+}
+/*HOME*/
+#home{
+    width: 100%;
+    height: 100vh;
+}
+.slideshow-container{
+    position: relative;
+    width: 100%;
+    z-index:-1;
+    margin: 0;
+}
+.slideshow{
+    display: block;
+}
+.navigation .prev{
+    position: absolute;
+    z-index: 2;
+    font-size: 40px;
+    top: 60%;
+    left: 10px;
+    font-weight: 700;
+}
+.navigation .next {
+    position: absolute;
+    z-index: 2;
+    font-size: 40px;
+    top: 60%;
+    right: 10px;
+    font-weight: 700;
+}
+.navigation .nav-btn {
+    /*background: rgba(255, 255, 255, 0.55);*/
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.navigation .nav-btn:hover {
+    background: white;
+}
+/*SLIDESHOW*/
+.slideshow{
+    position: relative;
+}
+.slidetxt1{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    font-size: 50px;
+    color: var(--white);
+    width: 350px;
+    padding: 5px;
+}
+.slidetxt2{
+    position: absolute;
+    top: 180%;
+    left: 10px;
+    font-size: 50px;
+    color: var(--white);
+    width: 350px;
+    padding: 5px;
+}
+#form{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+#email{
+    width: 500px;
+    height: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    width: 200px;
+    padding: 10px;
+}
+input[type=submit]:hover{
+    color: var(--white);
+    background-color: var(--green);
+}
+#AboutTea{
+    /*background-color: var(--slimygreen);
+    color: white;*/
+    padding: auto;
+}
+.aboutoverview{
+    padding: 10px auto;
+    margin: 2px;
+    font-size: 20px;
+}
+.explore h4{
+    font-size: 25px;
+    padding: 15px auto;
+}
+.grid-explore{
+display: block;
+margin-top: 30px;
+box-sizing: border-box;
+}
+.culture{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f7f7f0;
+    color: #9b9b9b;
+}
+.english{
+    margin: 40px;
+}
+.english h3{
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px;
+}
+.culture-img{
+    border: 2px;
+    padding: 5px 5px 5px 0px;
+    justify-items: left;
+}
+/*CONTACT*/
+/*.contactctcontainer{
+    display: flex;
+    flex-direction: row;
+}*/
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+
+    /*can set width*/
+}
+.formcontainer > h5{
+   font-size: 40px;
+   text-transform: capitalize; 
+}
+
+
+
