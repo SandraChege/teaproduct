@@ -23,7 +23,7 @@
     z-index: 1;
 }
 #nav-bar{
-    padding-left: 750px;
+    padding-left: 620px;
 }
 #nav-bar > ul{
     list-style-type: none;
@@ -43,6 +43,15 @@
 #nav-bar > ul >li >a:hover{
     color: var(--green);
 }
+.company-name{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #08784f;
+    width: 150px;
+    text-transform: uppercase;
+}
 /*HOME*/
 #home{
     width: 100%;
@@ -55,7 +64,7 @@
     margin: 0;
 }
 .slideshow{
-    display: block;
+    display: none;
 }
 .navigation .prev{
     position: absolute;
@@ -129,21 +138,22 @@ input[type=submit]{
 }
 input[type=submit]:hover{
     color: var(--white);
-    background-color: var(--green);
+    background-color: #e6b140;
 }
-#AboutTea{
-    /*background-color: var(--slimygreen);
-    color: white;*/
+/*#AboutTea{
+    background-color: var(--slimygreen);
+    color: white;
     padding: auto;
-}
+}*/
 .aboutoverview{
     padding: 10px auto;
     margin: 2px;
     font-size: 20px;
 }
-.explore h4{
+.explore > h4{
     font-size: 25px;
-    padding: 15px auto;
+    padding-left: 10px;
+    margin: 20px auto 15px auto;
 }
 .grid-explore{
 display: block;
@@ -151,9 +161,10 @@ margin-top: 30px;
 box-sizing: border-box;
 }
 .culture{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: auto;
+    /*align-items: center;
+    flex-direction: row;*/
     background-color: #f7f7f0;
     color: #9b9b9b;
 }
@@ -166,26 +177,114 @@ box-sizing: border-box;
     text-transform: capitalize;
     padding: 5px;
 }
-.culture-img{
+.culture-img > img{
     border: 2px;
     padding: 5px 5px 5px 0px;
     justify-items: left;
 }
 /*CONTACT*/
-/*.contactctcontainer{
+
+/*THE CONTACT AREA IS COMPLETE EXCEPT FOT THE FLEX IN CONTACT CONTAINER*/
+.contact{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contactctcontainer > div{
     display: flex;
-    flex-direction: row;
-}*/
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+}
 .formcontainer{
     display: flex;
     flex-direction: column;
+    width: 500px;
+    box-sizing: border-box;
 
     /*can set width*/
 }
 .formcontainer > h5{
    font-size: 40px;
    text-transform: capitalize; 
+   text-align: center;
+   padding: 15px 5px;
+}
+.form{
+ /*CHANGE PADDING PROPERTY*/
+    padding-left: 100px;
+}
+input[type=text], input[type=tel], input[type=email], textarea{
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+textarea{
+    resize: none;
+}
+.contactinfo{
+    width: 600px;
+    /*padding-left: 700px;*/
+    
+}
+.column2{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #888989;
+}
+.contactinfo{
+    padding: 5px;
+}
+.column2{
+    line-height: 50px;
+}
+.column2 ul{
+    list-style-type: none;
+}
+.column2 > ul >li{
+    display: inline-block;
+}
+.fa-brands{
+    font-size: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.fa-brands:hover, .fa-brands:active, .fa-regular, .fa-solid{
+    color: #e6b140;
+}
+.column2 > h5{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.fa-regular, .fa-solid{
+    padding-right: 10px;
+    font-size: 25px;
+}
+.copyright{
+    text-align: center;
+    font-style: italic;
+    font-family: var(--font-roboto);
+    font-weight: 900;
+}
+.copyright > .fa-solid:last-of-type{
+    padding-right: 5px;
+    font-size: 16px;
 }
 
+/* 
+Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
 
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
 
+ Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+*/
